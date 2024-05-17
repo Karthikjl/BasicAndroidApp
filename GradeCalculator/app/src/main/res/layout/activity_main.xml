@@ -1,0 +1,66 @@
+<!-- activity_main.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Input fields for subject names and marks -->
+    <EditText
+        android:id="@+id/subjectNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Subject Name" />
+
+    <EditText
+        android:id="@+id/subjectMarksEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Subject Marks"
+        android:layout_below="@id/subjectNameEditText" />
+
+    <!-- Button to add subject -->
+    <Button
+        android:id="@+id/addSubjectButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Subject"
+        android:layout_below="@id/subjectMarksEditText" />
+
+    <!-- TextViews to display results -->
+    <TextView
+        android:id="@+id/totalMarksTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Marks: "
+        android:layout_below="@id/addSubjectButton" />
+
+    <TextView
+        android:id="@+id/averagePercentageTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Average Percentage: "
+        android:layout_below="@id/totalMarksTextView" />
+
+    <TextView
+        android:id="@+id/gradeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Grade: "
+        android:layout_below="@id/averagePercentageTextView" />
+
+    <TextView
+        android:id="@+id/gpaTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GPA: "
+        android:layout_below="@id/gradeTextView" />
+
+    <TextView
+        android:id="@+id/feedbackTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Feedback: "
+        android:layout_below="@id/gpaTextView" />
+
+</RelativeLayout>
